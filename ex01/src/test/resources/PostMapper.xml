@@ -3,9 +3,16 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 	
 <mapper namespace="org.fofo.mapper.PostMapper">
+	
 	<insert id="create">
-		insert into 
+		insert into Post(boardID, uID, postTitle, postContent, tags)
+		values (#{boardID}, #{uDI}, #{postTitle}, #{postCOntent}, #{tags})
 	</insert>
 	
+	<select id="read" resultType="org.fofo.domain.PostVO">
+		select Nickname, hitNum, recommentNum, commentNum, bookmarkNum, postDate, postTitle, postContent, tags
+		from Post
+		where boardID = #{boardID} 
+	</select>
 	
 </mapper>
