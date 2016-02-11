@@ -2,7 +2,7 @@ package org.fofo.domain;
 
 import java.util.Date;
 
-public class QABoardVO {
+public class UserVO {
 	
 	private Integer uID;
 	private String uEmail;
