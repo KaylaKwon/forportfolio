@@ -369,7 +369,7 @@
                 <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
               </ul>
             </li>
-            <li class="treeview active">
+            <li class="treeview"> <!-- 처음부터 열어놓기: treeview active -->
               <a href="#">
                 <i class="fa fa-edit"></i> <span>Forms</span>
                 <i class="fa fa-angle-left pull-right"></i>
