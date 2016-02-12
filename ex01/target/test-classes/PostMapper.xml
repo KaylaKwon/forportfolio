@@ -10,9 +10,31 @@
 	</insert>
 	
 	<select id="read" resultType="org.fofo.domain.PostVO">
-		select Nickname, hitNum, recommentNum, commentNum, bookmarkNum, postDate, postTitle, postContent, tags
+		select postID, hitNum, postDate, postTitle, postContent
 		from Post
-		where boardID = #{boardID} 
+		where postID=#{postID} 
 	</select>
+	
+	<update id="update">
+		update Post set postTitle=#{postTitle}, postContent=#{postContent}
+		where postID=#{postID}
+		
+	</update>
+	
+	<delete id="delete">
+		delete from Post
+		where postID=#{postID}
+	</delete>
+	
+	<select id="listAll" resultType="org.fofo.domain.PostVO">
+		<![CDATA[
+			select postID, hitNum, postDate, postTitle, postContent
+			from Post
+			where postID > 0
+			order by postID desc, postDate desc
+		]]>
+	</select>
+	
+	
 	
 </mapper>
