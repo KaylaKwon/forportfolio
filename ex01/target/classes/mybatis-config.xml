@@ -18,4 +18,9 @@
 	<mappers>
 		<mapper resource = "org/mybatis/example/BlogMapper.xml"/>
 	</mappers> -->
+	
+	
+	<typeAliases>
+		<package name="org.fofo.domain"/>
+	</typeAliases>
 </configuration>

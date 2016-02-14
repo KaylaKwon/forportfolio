@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class PostVO {
 	private Integer postID;
-	private String boardID;
+	private Integer boardID;
 	private Integer uID;
 	private Integer hitNum;
 	private Integer recommendNum;
@@ -18,7 +18,7 @@ public class PostVO {
 	
 	//Getter
 	public Integer getPostID(){ return postID; }
-	public String getBoardID(){ return boardID; }
+	public Integer getBoardID(){ return boardID; }
 	public Integer getUID(){ 	return uID; }
 	
 	public Integer getHitNum(){ 		return hitNum; }
@@ -36,7 +36,7 @@ public class PostVO {
 	
 	//Setter
 	public void setPostID(Integer postID){	this.postID = postID; }
-	public void setBoardID(String boardID){ this.boardID = boardID; }
+	public void setBoardID(Integer boardID){ this.boardID = boardID; }
 	public void setUID(Integer uID){ 		this.uID = uID; }
 	
 	public void setHitNum(Integer hitNum){				this.hitNum = hitNum; }
