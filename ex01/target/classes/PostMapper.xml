@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="org.fofo.mapper.PostMapper">
+	
+	<insert id="create">
+		insert into Post(boardID, uID, postTitle, postContent, tags)
+		values (#{boardID}, #{uDI}, #{postTitle}, #{postCOntent}, #{tags})
+	</insert>
+	
+	<select id="read" resultType="org.fofo.domain.PostVO">
+		select postID, hitNum, postDate, postTitle, postContent
+		from Post
+		where postID=#{postID} 
+	</select>
+	
+	<update id="update">
+		update Post set postTitle=#{postTitle}, postContent=#{postContent}
+		where postID=#{postID}
+		
+	</update>
+	
+	<delete id="delete">
+		delete from Post
+		where postID=#{postID}
+	</delete>
+	
+	<select id="listAll" resultType="org.fofo.domain.PostVO">
+		<![CDATA[
+			select postID, hitNum, postDate, postTitle, postContent
+			from Post
+			where postID > 0
+			order by postID desc, postDate desc
+		]]>
+	</select>
+	
+	
+	
+</mapper>
