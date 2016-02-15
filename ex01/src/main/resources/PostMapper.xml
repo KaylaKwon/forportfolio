@@ -5,8 +5,8 @@
 <mapper namespace="org.fofo.mapper.PostMapper">
 	
 	<insert id="create">
-		insert into Post(boardID, uID, postTitle, postContent, tags)
-		values (#{boardID}, #{uDI}, #{postTitle}, #{postCOntent}, #{tags})
+		insert into Post(uID, postTitle, postContent, tags)
+		values (#{uID}, #{postTitle}, #{postContent}, #{tags})
 	</insert>
 	
 	<select id="read" resultType="org.fofo.domain.PostVO">
