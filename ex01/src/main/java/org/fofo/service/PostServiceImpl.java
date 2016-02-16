@@ -20,8 +20,8 @@ public class PostServiceImpl implements PostService{
 	}
 	
 	@Override
-	public PostVO read(Integer postID) throws Exception{
-		return dao.read(postID);
+	public PostVO read(Integer postId) throws Exception{
+		return dao.read(postId);
 	}
 	
 	@Override
@@ -30,8 +30,8 @@ public class PostServiceImpl implements PostService{
 	}
 	
 	@Override
-	public void remove(Integer postID) throws Exception{
-		dao.delete(postID);
+	public void remove(Integer postId) throws Exception{
+		dao.delete(postId);
 	}
 	
 	@Override

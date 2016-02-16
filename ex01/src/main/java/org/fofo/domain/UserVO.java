@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class UserVO {
 	
-	private Integer uID;
+	private Integer uId;
 	private String uEmail;
 	private String uPW;
 	
@@ -17,21 +17,21 @@ public class UserVO {
 	private String uProfileImg;
 	
 	private Integer uSchoolNum;
-	private String uSchoolIDs;
+	private String uSchoolIds;
 	private Integer uCareerPeriodYear;
 	private Integer uCareerPeriodMonth;
-	private String uCareerIDs;
+	private String uCareerIds;
 	
 	private Integer uAwardNum;
-	private String  uAwardIDs;
+	private String  uAwardIds;
 	private Integer uSkillNum;
-	private String uSkillIDs;
+	private String uSkillIds;
 	
 	private Integer uProjectNum;
-	private String uProjectIDs;
+	private String uProjectIds;
 	
 	private Integer uLanguageNum;
-	private String uLanguageIDs;
+	private String uLanguageIds;
 	
 	private boolean uPostPublic;
 	
@@ -39,7 +39,7 @@ public class UserVO {
 	private Integer uCommentNum;
 	
 	//Getter
-	public Integer getUID(){	return uID;	}
+	public Integer getUId(){	return uId;	}
 	public String getUEmail(){	return uEmail;	}
 	public String getUPW(){		return uPW;}
 	
@@ -52,28 +52,28 @@ public class UserVO {
 	public String getUProfileImg(){	return uProfileImg;	}
 	
 	public Integer getUSchoolNum(){	return uSchoolNum;	}
-	public String getUSchoolIDs(){	return uSchoolIDs;	}
+	public String getUSchoolIds(){	return uSchoolIds;	}
 	public Integer getUCareerPeriodYear(){	return uCareerPeriodYear;	}
 	public Integer getUCareerPeriodMonth(){	return uCareerPeriodMonth;	}
-	public String getUCareerIDs(){	return uCareerIDs;	}
+	public String getUCareerIds(){	return uCareerIds;	}
 	
 	public Integer getUAwardNum(){	return uAwardNum;	}
-	public String  getUAwardIDs(){	return uAwardIDs;	}
+	public String  getUAwardIds(){	return uAwardIds;	}
 	public Integer getUSkillNum(){	return uSkillNum;	}
-	public String getUSkillIDs(){	return uSkillIDs;	}
+	public String getUSkillIds(){	return uSkillIds;	}
 	
 	public Integer getUProjectNum(){return uProjectNum;	}
-	public String getUProjectIDs(){	return uProjectIDs;	}
+	public String getUProjectIds(){	return uProjectIds;	}
 	
 	public Integer getULanguageNum(){	return uLanguageNum;	}
-	public String getULanguageIDs(){	return uLanguageIDs;	}
+	public String getULanguageIds(){	return uLanguageIds;	}
 	
 	public boolean getUPostPublic(){	return uPostPublic;	}
 	public Integer getUPostNum(){		return uPostNum;	}
 	public Integer getUCommentNum(){	return uCommentNum;	}
 	
 	//Setter
-	public void setUID(Integer uID){		this.uID = uID;	}
+	public void setUId(Integer uId){		this.uId = uId;	}
 	public void setUEmail(String uEmail){	this.uEmail = uEmail;	}
 	public void setUPW(String uPW){			this.uPW = uPW;	}
 	
@@ -86,21 +86,21 @@ public class UserVO {
 	public void setUProfileImg(String uProfileImg){	this.uProfileImg = uProfileImg;	}
 	
 	public void setUSchoolNum(Integer uSchoolNum){	this.uSchoolNum = uSchoolNum;	}
-	public void setUSchoolIDs(String uSchoolIDs){	this.uSchoolIDs = uSchoolIDs;	}
+	public void setUSchoolIds(String uSchoolIds){	this.uSchoolIds = uSchoolIds;	}
 	public void setUCareerPeriodYear(Integer uCareerPeriodYear){	this.uCareerPeriodYear = uCareerPeriodYear;	}
 	public void setUCareerPeriodMonth(Integer uCareerPeriodMonth){	this.uCareerPeriodMonth = uCareerPeriodMonth;	}
-	public void setUCareerIDs(String uCareerIDs){	this.uCareerIDs = uCareerIDs;	}
+	public void setUCareerIds(String uCareerIds){	this.uCareerIds = uCareerIds;	}
 	
 	public void setUAwardNum(Integer uAwardNum){	this.uAwardNum = uAwardNum;	}
-	public void setUAwardIDs(String uAwardIDs){		this.uAwardIDs = uAwardIDs;	}
+	public void setUAwardIds(String uAwardIds){		this.uAwardIds = uAwardIds;	}
 	public void setUSkillNum(Integer uSkillNum){	this.uSkillNum = uSkillNum;	}
-	public void setUSkillIDs(String uSkillIDs){		this.uSkillIDs = uSkillIDs;	}
+	public void setUSkillIds(String uSkillIds){		this.uSkillIds = uSkillIds;	}
 	
 	public void setUProjectNum(Integer uProjectNum){	this.uProjectNum = uProjectNum;	}
-	public void setUProjectIDs(String uProjectIDs){		this.uProjectIDs = uProjectIDs;	}
+	public void setUProjectIds(String uProjectIds){		this.uProjectIds = uProjectIds;	}
 	
 	public void setULanguageNum(Integer uLanguageNum){	this.uLanguageNum = uLanguageNum;	}
-	public void setULanguageIDs(String uLanguageIDs){	this.uLanguageIDs = uLanguageIDs;	}
+	public void setULanguageIds(String uLanguageIds){	this.uLanguageIds = uLanguageIds;	}
 	
 	public void setUPostPublic(boolean uPostPublic){	this.uPostPublic = uPostPublic;	}
 	public void setUPostNum(Integer uPostNum){			this.uPostNum = uPostNum;	}

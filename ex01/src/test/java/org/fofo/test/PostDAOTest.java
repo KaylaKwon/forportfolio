@@ -25,8 +25,8 @@ public class PostDAOTest {
 	@Test
 	public void testCreate() throws Exception{
 		PostVO post = new PostVO();
-		post.setBoardID(1);
-		post.setUID(1);
+		post.setBoardId(1);
+		post.setUserId(1);
 		post.setPostTitle("새로운 글을 넣습니다.");
 		post.setPostContent("새로운 글을 넣쓰");
 	}
@@ -39,7 +39,7 @@ public class PostDAOTest {
 	@Test
 	public void testUpdate() throws Exception{
 		PostVO post = new PostVO();
-		post.setPostID(1);
+		post.setPostId(1);
 		post.setPostTitle("수정된 글임다");
 		post.setPostContent("수정 테슽쓰");
 		dao.update(post);
