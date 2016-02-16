@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class UserVO {
 	
-	private Integer uId;
+	private Integer userId;
 	private String uEmail;
 	private String uPW;
 	
@@ -39,7 +39,7 @@ public class UserVO {
 	private Integer uCommentNum;
 	
 	//Getter
-	public Integer getUId(){	return uId;	}
+	public Integer getUserId(){	return userId;	}
 	public String getUEmail(){	return uEmail;	}
 	public String getUPW(){		return uPW;}
 	
@@ -73,7 +73,7 @@ public class UserVO {
 	public Integer getUCommentNum(){	return uCommentNum;	}
 	
 	//Setter
-	public void setUId(Integer uId){		this.uId = uId;	}
+	public void setUserId(Integer userId){		this.userId = userId;	}
 	public void setUEmail(String uEmail){	this.uEmail = uEmail;	}
 	public void setUPW(String uPW){			this.uPW = uPW;	}
 	

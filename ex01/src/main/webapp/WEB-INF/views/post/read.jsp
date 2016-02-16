@@ -10,7 +10,7 @@
 	
 	<div class="box-body">
 		<div class="form-group">
-			<label for="exampleInputEmail">Title</label>
+			<label for="exampleInputEmail1">Title</label>
 			<input type="text" name='postTitle' class="form-control" value="${postVO.postTitle }" readonly="readonly">
 		</div>
 		<div class="form-group">
@@ -18,16 +18,47 @@
 			<textarea class="form-control" name="postContent" rows="3" readonly="readonly">${postVO.postContent }</textarea>
 		</div>
 		<div class="form-group">
-			<label for="exampleInputEmail">Writer</label>
+			<label for="exampleInputEmail1">Writer</label>
 			<input type="text" name="userId" class="form-control" value="${postVO.userId }" readonly="readonly">
 		</div>
 	</div>
 	
 	<div class="box-footer">
-		<button type="submit" class="btn btn-warning">Modify</button>
-		<button type="submit" class="btn btn-danger">REMOVE</button>
-		<button type="submit" class="btn btn-primary">LIST ALL</button>
+		<button id="modifyPost" type="submit" class="btn btn-warning">Modify</button>
+		<button id="removePost" type="submit" class="btn btn-danger">REMOVE</button>
+		<button id="goList" type="submit" class="btn btn-primary">LIST ALL</button>
 	</div>
 	
-	
 <%@ include file="../include/footer.jsp" %>
+
+
+<script>
+
+	$(document).ready(function(){
+		var formObj = $("form[role = 'form']");
+		console.log(formObj);
+		
+		$(".btn-warning").on("click", function(){
+			formObj.attr("action", "/post/modify");
+			formObj.attr("method", "get");
+			formObj.submit();
+		});
+		
+		$(".btn-danger").on("click", function(){
+			formObj.attr("action", "/post/remove");
+			formObj.submit();
+		});
+		
+		$(".btn-primary").on("click", function(){
+			self.location = "/post/listAll";
+		});
+	});
+	
+/* 	$(".btn-primary").on("click", function(){
+		formObj.attr("action", "/post/modify");
+		formObj.attr("method", "get");
+		formObj.submit();
+	}); */
+	
+	
+</script>

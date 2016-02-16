@@ -49,4 +49,27 @@ public class PostController {
 		model.addAttribute(service.read(postId));
 	}
 	
+	@RequestMapping(value = "/remove", method = RequestMethod.POST)
+	public String remove(@RequestParam("postId") int postId, RedirectAttributes rttr) throws Exception{
+		service.remove(postId);
+		
+		rttr.addFlashAttribute("msg", "SUCCESS");
+		
+		return "redirect:/post/listAll";
+	}
+	
+	@RequestMapping(value = "/modify", method = RequestMethod.GET)
+	public void modifyGET(int postId, Model model) throws Exception{
+		model.addAttribute(service.read(postId));
+	}
+	
+	@RequestMapping(value = "/modify", method = RequestMethod.POST)
+	public String modifyPOST(PostVO post, RedirectAttributes rttr) throws Exception{
+		logger.info("mod post~~~~~~~~~~~~~~~~~~~~~");
+		
+		service.modify(post);
+		rttr.addFlashAttribute("msg", "SUCCESS");
+		
+		return "redirect:/post/listAll";
+	}
 }
