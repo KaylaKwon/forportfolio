@@ -16,4 +16,8 @@ public interface PostDAO {
 	public void delete(Integer postId) throws Exception;
 	
 	public List<PostVO> listAll() throws Exception;
+	
+	public List<PostVO> listPage(int page) throws Exception;
+	
+	
 }

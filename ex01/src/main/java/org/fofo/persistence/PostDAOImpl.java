@@ -40,4 +40,13 @@ public class PostDAOImpl implements PostDAO{
 	public List<PostVO> listAll() throws Exception{
 		return session.selectList(namespace+".listAll");
 	}
+	
+	@Override
+	public List<PostVO> listPage(int page) throws Exception{
+		if(page <= 0){
+			page = 1;
+		}
+		page = (page -1)*10;
+		return session.selectList(namespace + ".listPage", page);
+	}
 }

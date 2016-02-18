@@ -5,36 +5,44 @@
 <mapper namespace="org.fofo.mapper.PostMapper">
 	
 	<insert id="create">
-		insert into Post(userId, postTitle, postContent, tags)
+		insert into post(userId, postTitle, postContent, tags)
 		values (#{userId}, #{postTitle}, #{postContent}, #{tags})
 	</insert>
 	
 	<select id="read" resultType="org.fofo.domain.PostVO">
 		select postId, userId, hitNum, postDate, postTitle, postContent
-		from Post
+		from post
 		where postId=#{postId} 
 	</select>
 	
 	<update id="update">
-		update Post set postTitle=#{postTitle}, postContent=#{postContent}
+		update post set postTitle=#{postTitle}, postContent=#{postContent}
 		where postId=#{postId}
 		
 	</update>
 	
 	<delete id="delete">
-		delete from Post
+		delete from post
 		where postId=#{postId}
 	</delete>
 	
 	<select id="listAll" resultType="org.fofo.domain.PostVO">
 		<![CDATA[
 			select postId, postTitle, userId, postDate, hitNum
-			from Post
+			from post
 			where postId > 0
 			order by postId desc, postDate desc
 		]]>
 	</select>
 	
-	
+	<select id="listPage" resultType="PostVO">
+		<![CDATA[
+			select postId, postTitle, userId, postDate, hitNum
+			from post
+			where postId > 0
+			order by postId desc, postDate desc
+			limit #{page}, 10
+		]]>
+	</select>
 	
 </mapper>

@@ -1,5 +1,7 @@
 package org.fofo.test;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.fofo.domain.PostVO;
@@ -49,4 +51,17 @@ public class PostDAOTest {
 	public void testDelete() throws Exception{
 		dao.delete(1);
 	}
+	
+	@Test
+	public void testListPage() throws Exception{
+		int page = 3;
+		List<PostVO> list = dao.listPage(page);
+		for(PostVO postVO : list){
+			logger.info(postVO.getPostId() + ":" + postVO.getPostTitle());
+		}
+	}
+	
+	
+	
+	
 }
