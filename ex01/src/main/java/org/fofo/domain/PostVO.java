@@ -1,11 +1,11 @@
 package org.fofo.domain;
-/*하나의 개시글 객체*/
+
 import java.util.Date;
 
 public class PostVO {
-	private Integer postID;
-	private Integer boardID;
-	private Integer uID;
+	private Integer postId;
+	private Integer boardId;
+	private Integer userId;
 	private Integer hitNum;
 	private Integer recommendNum;
 	private Integer commentNum;
@@ -17,9 +17,9 @@ public class PostVO {
 	
 	
 	//Getter
-	public Integer getPostID(){ return postID; }
-	public Integer getBoardID(){ return boardID; }
-	public Integer getUID(){ 	return uID; }
+	public Integer getPostId(){ return postId; }
+	public Integer getBoardId(){ return boardId; }
+	public Integer getUserId(){ return userId; }
 	
 	public Integer getHitNum(){ 		return hitNum; }
 	public Integer getRecommendNum(){	return recommendNum; }
@@ -35,9 +35,9 @@ public class PostVO {
 	
 	
 	//Setter
-	public void setPostID(Integer postID){	this.postID = postID; }
-	public void setBoardID(Integer boardID){ this.boardID = boardID; }
-	public void setUID(Integer uID){ 		this.uID = uID; }
+	public void setPostId(Integer postId){	this.postId = postId; }
+	public void setBoardId(Integer boardId){ this.boardId = boardId; }
+	public void setUserId(Integer userId){ 	this.userId = userId; }
 	
 	public void setHitNum(Integer hitNum){				this.hitNum = hitNum; }
 	public void setRecommendNum(Integer recommendNum){	this.recommendNum = recommendNum; }

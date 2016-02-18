@@ -8,7 +8,19 @@
 </head>
 <body>
 
-
+<div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Board Management
+            <small>Preview</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Forms</a></li>
+            <li class="active">General Elements</li>
+          </ol>
+        </section>
 	<form role="form" method="post">
 		<div class="box-body">
 			<div class="form-group">
@@ -30,7 +42,7 @@
 		</div>
 	</form>
 
-
+</div>
 
 </body>
 </html>
