@@ -7,12 +7,12 @@
 	<form role="form" method="post">
 		<div class="box-body">
 			<div class="form-group">
-				<label for="exampleInputEmail1>">PostID</label>
-				<input type="text" name='postId' class="form-control" values="${postVO.postID }" readonly="readonly">
+				<label for="exampleInputEmail1>">PostId</label>
+				<input type="text" name='postId' class="form-control" value="${postVO.postId}" readonly="readonly">
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail1>">Title</label>
-				<input type="text" name='postTitle' class="form-control" values="${postVO.postTitle }">
+				<input type="text" name='postTitle' class="form-control" value='${postVO.postTitle}'>
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Content</label>
@@ -20,7 +20,7 @@
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail1>">Writer</label>
-				<input type="text" name='userId' class="form-control" values="${postVO.userId }">
+				<input type="text" name='userId' class="form-control" value="${postVO.userId}">
 			</div>
 		</div>
 		
