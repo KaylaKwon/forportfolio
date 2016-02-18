@@ -1,5 +1,5 @@
 package org.fofo.service;
-
+/*서비스 계층 -> 사용자 요구사항에 대한 기능*/
 import java.util.List;
 
 import javax.inject.Inject;
@@ -20,8 +20,8 @@ public class PostServiceImpl implements PostService{
 	}
 	
 	@Override
-	public PostVO read(Integer postId) throws Exception{
-		return dao.read(postId);
+	public PostVO read(Integer postID) throws Exception{
+		return dao.read(postID);
 	}
 	
 	@Override
@@ -30,8 +30,8 @@ public class PostServiceImpl implements PostService{
 	}
 	
 	@Override
-	public void remove(Integer postId) throws Exception{
-		dao.delete(postId);
+	public void remove(Integer postID) throws Exception{
+		dao.delete(postID);
 	}
 	
 	@Override

@@ -449,7 +449,9 @@ a:focus {
   }
 }
 .sidebar {
-  padding-bottom: 10px;
+	height: 90%;
+ 	padding-bottom: 10px;
+  	text-align:center;
 }
 .sidebar-form input:focus {
   border-color: transparent!important;
@@ -496,9 +498,11 @@ a:focus {
 }
 .sidebar-menu {
   list-style: none;
-  margin: 0;
+  margin: 50px 0px 0px 0px;
   padding: 0;
+  text-align : left;
 }
+
 .sidebar-menu > li {
   position: relative;
   margin: 0;
@@ -535,9 +539,25 @@ a:focus {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-.sidebar-menu li.active > .treeview-menu {
+.sidebar-menu li.active > .treeview-menu,
+.sidebar-menu li.active > .login-menu {
   display: block;
 }
+
+.sidebar-menu .login-menu{
+  	list-style: none;
+   	margin: 50px 0px 0px 0px;
+  	padding: 0;
+ 	padding-left: 5px;
+	text-align : center;
+}
+
+.sidebar-menu .login-menu > li > a {
+  padding: 5px 5px 5px 15px;
+  display: block;
+  font-size: 14px;
+}
+
 .sidebar-menu .treeview-menu {
   display: none;
   list-style: none;
@@ -545,17 +565,31 @@ a:focus {
   margin: 0;
   padding-left: 5px;
 }
-.sidebar-menu .treeview-menu .treeview-menu {
+
+.sidebar-menu .treeview-menu .treeview-menu,
+.sidebar-menu .login-menu {
   padding-left: 20px;
 }
-.sidebar-menu .treeview-menu > li {
+.sidebar-menu .treeview-menu > li,
+.sidebar-menu .login-menu > li {
   margin: 0;
 }
-.sidebar-menu .treeview-menu > li > a {
+.sidebar-menu .treeview-menu > li > a,
+.sidebar-menu .login-menu > li > a {
   padding: 5px 5px 5px 15px;
   display: block;
   font-size: 14px;
 }
+
+.sidebar-menu .login-menu >li > a > .glyphicon {
+  width: 20px;
+}
+
+.sidebar-menu .login-menu > li > a > .fa-angle-left,
+.sidebar-menu .login-menu > li > a > .fa-angle-down {
+  width: auto;
+}
+
 .sidebar-menu .treeview-menu > li > a > .fa,
 .sidebar-menu .treeview-menu > li > a > .glyphicon,
 .sidebar-menu .treeview-menu > li > a > .ion {
@@ -595,13 +629,15 @@ a:focus {
   .sidebar-mini.sidebar-collapse .sidebar-menu > li:not(.treeview) > a > span {
     border-bottom-right-radius: 4px;
   }
-  .sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
+  .sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu,
+  .sidebar-mini.sidebar-collapse .sidebar-menu > li > .login-menu {
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom-right-radius: 4px;
   }
   .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),
-  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu,
+   sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .login-menu{
     display: block!important;
     position: absolute;
     width: 180px;
@@ -613,7 +649,8 @@ a:focus {
     padding: 12px 5px 12px 20px;
     background-color: inherit;
   }
-  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu
+  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .login.menu {
     top: 44px;
     margin-left: 0;
   }
@@ -621,6 +658,7 @@ a:focus {
   .sidebar-mini.sidebar-collapse .sidebar-form,
   .sidebar-mini.sidebar-collapse .sidebar-menu > li > a > span,
   .sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu,
+  .sidebar-mini.sidebar-collapse .sidebar-menu > li > .login-menu,
   .sidebar-mini.sidebar-collapse .sidebar-menu > li > a > .pull-right,
   .sidebar-mini.sidebar-collapse .sidebar-menu li.header {
     display: none!important;

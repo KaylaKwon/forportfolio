@@ -22,8 +22,8 @@ public class PostDAOImpl implements PostDAO{
 	}
 	
 	@Override
-	public PostVO read(Integer postId) throws Exception{
-		return session.selectOne(namespace + ".read", postId);
+	public PostVO read(Integer postID) throws Exception{
+		return session.selectOne(namespace + ".read", postID);
 	}
 	
 	@Override
@@ -32,8 +32,8 @@ public class PostDAOImpl implements PostDAO{
 	}
 	
 	@Override
-	public void delete(Integer postId) throws Exception{
-		session.delete(namespace + ".delete", postId);
+	public void delete(Integer postID) throws Exception{
+		session.delete(namespace + ".delete", postID);
 	}
 	
 	@Override

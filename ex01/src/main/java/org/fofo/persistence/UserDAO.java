@@ -8,11 +8,11 @@ public interface UserDAO {
 	
 	public void create(UserVO vo) throws Exception;
 	
-	public UserVO read(Integer userId) throws Exception;
+	public UserVO read(Integer uID) throws Exception;
 	
 	public void update(UserVO vo) throws Exception;
 	
-	public void delete(Integer userId) throws Exception;
+	public void delete(Integer uID) throws Exception;
 	
 	public List<UserVO> listAll() throws Exception;
 	
