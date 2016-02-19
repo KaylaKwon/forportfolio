@@ -15,4 +15,7 @@ public interface PostService {
 	public void remove(Integer postId) throws Exception;
 	
 	public List<PostVO> listAll() throws Exception;
+//	
+//	//public List<PostVO> listCriteria(Criteria cri) throws Exception;
+//	
 }

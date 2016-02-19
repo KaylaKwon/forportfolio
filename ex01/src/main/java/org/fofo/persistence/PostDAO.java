@@ -19,5 +19,4 @@ public interface PostDAO {
 	
 	public List<PostVO> listPage(int page) throws Exception;
 	
-	
 }

@@ -38,4 +38,9 @@ public class PostServiceImpl implements PostService{
 	public List<PostVO> listAll() throws Exception{
 		return dao.listAll();
 	}
+	
+//	@Override
+//	public List<PostVO> listCriteria(Criteria cri) throws Exception{
+//		return dao.listCriteria(cri);
+//	}
 }
